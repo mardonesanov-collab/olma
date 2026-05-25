@@ -1,0 +1,113 @@
+:root {
+  --tg-bg-color: var(--tg-theme-bg-color, #ffffff);
+  --tg-text-color: var(--tg-theme-text-color, #000000);
+  --tg-hint-color: var(--tg-theme-hint-color, #999999);
+  --tg-link-color: var(--tg-theme-link-color, #2481cc);
+  --tg-button-color: var(--tg-theme-button-color, #2481cc);
+  --tg-button-text-color: var(--tg-theme-button-text-color, #ffffff);
+  --tg-secondary-bg-color: var(--tg-theme-secondary-bg-color, #f0f0f0);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, sans-serif;
+  background: var(--tg-bg-color);
+  color: var(--tg-text-color);
+  padding: 12px;
+  min-height: 100vh;
+}
+
+.card {
+  background: var(--tg-secondary-bg-color);
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 12px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: var(--tg-button-color);
+  color: var(--tg-button-text-color);
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.btn-secondary {
+  background: var(--tg-secondary-bg-color);
+  color: var(--tg-text-color);
+}
+
+.btn-danger {
+  background: #e74c3c;
+  color: white;
+}
+
+.input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--tg-hint-color);
+  border-radius: 8px;
+  font-size: 15px;
+  background: var(--tg-bg-color);
+  color: var(--tg-text-color);
+  margin-bottom: 12px;
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--tg-button-color);
+}
+
+.header {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.subheader {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: var(--tg-hint-color);
+}
+
+.item-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--tg-secondary-bg-color);
+}
+
+.item-name {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.item-price {
+  font-size: 14px;
+  color: var(--tg-hint-color);
+}
+
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 10px;
+  background: var(--tg-button-color);
+  color: var(--tg-button-text-color);
+  font-size: 12px;
+  margin-left: 8px;
+}

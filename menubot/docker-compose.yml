@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: menubot-postgres
+    environment:
+      POSTGRES_DB: menubot
+      POSTGRES_USER: menubot
+      POSTGRES_PASSWORD: menubot
+    ports:
+      - "5432:5432"
+    volumes:
+      - menubot_pg:/var/lib/postgresql/data
+
+volumes:
+  menubot_pg:
